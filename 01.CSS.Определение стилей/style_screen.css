@@ -1,0 +1,30 @@
+li{
+    padding-left: 15px;
+}
+
+body{
+    background-color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.centr{
+    text-align: center;
+}
+
+.pravo{
+    text-align: right;
+}
+
+.pre{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
