@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .day{
+            width: 100px;
+            background: rgb(185, 184, 184);
+            border: solid black 1px;
+            border-radius: 5px;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .sreda{
+            width: 100px;
+            display: none;
+        }
+
+        .sreda > div{
+            background: rgb(185, 184, 184);
+            border: solid black 1px;
+            border-radius: 5px;
+        }
+
+        div.wrap > div:hover div.sreda{
+            display: block;
+            position: absolute;
+            top: 20px;
+            z-index: auto;
+        }
+
+        @media all and (max-width: 500px){
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .day{
+            width: 100px;
+            background: rgb(185, 184, 184);
+            border: solid black 1px;
+            border-radius: 5px;
+            float: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .sreda{
+            width: 100px;
+            display: none;
+        }
+
+        div.wrap > div:hover div.sreda{
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+            z-index: auto;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="day">Понедельник</div>
+        <div class="day">Вторник</div>
+
+        <div class="day">Среда
+            <div class="sreda">
+                <div class="eat">Завтрак</div>
+                <div class="eat">Обед</div>
+                <div class="eat">Ужин</div>
+            </div>
+        </div>
+
+        <div class="day">Четверг</div>
+        <div class="day">Пятница</div>
+        <div class="day">Суббота</div>
+    </div>
+</body>
+</html>
